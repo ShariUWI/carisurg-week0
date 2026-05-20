@@ -26,3 +26,23 @@ The main objectives for Week 0 are to:
 - Explain a clinical vital sign in plain language
 - Develop simple rule-based logic to identify at-risk patients
 - Submit a final documented notebook
+
+## Day 1 Submission: Gender Column Cleaning
+
+The Day 1 task focused on cleaning the `Gender` column in the Week 0 emergency triage dataset.
+
+The completed notebook includes:
+
+- Loading the dataset into pandas
+- Inspecting the original `Gender` column
+- Identifying inconsistent values such as `0`, `1`, `Male`, `MALE`, `Female`, and `FEMALE`
+- Encoding gender values using:
+  - `1 = Male`
+  - `0 = Female`
+  - `2 = Non-binary/Other`
+  - `-1 = Unknown/Unspecified`
+- Handling missing, unclear, and unexpected entries
+- Verifying the cleaned column using value counts
+- Saving the cleaned dataset for future Week 0 tasks
+
+Notebook: `S_Oliver_Week0_Day1_Gender_Cleaning.ipynb`
