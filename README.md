@@ -1,6 +1,6 @@
 # carisurg-week0
 
-# CariSurg MedTech Pathways — Week 0 Portfolio
+# CariSurg MedTech Pathways - Week 0 Portfolio
 
 This repository contains my Week 0 submissions for the **CariSurg MedTech Pathways Programme**.
 
