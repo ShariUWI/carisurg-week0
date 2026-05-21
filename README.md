@@ -104,6 +104,11 @@ The repository includes:
 - Completed Day 2 notebook
 - MAP cleaning justification report
 - Screenshots showing the cleaning outputs
+    - `screenshots/tut2_environment_setup.png`
+    - `screenshots/dbp_cleaning.png`
+    - `screenshots/sbp_cleaning.png`
+    - `screenshots/map_cleaning1.png`
+    - `screenshots/map_nan_output.png`
 - Evidence of the considerations used to clean SBP, DBP, and MAP
 
 6. **MAP was recalculated from cleaned SBP and DBP**  
