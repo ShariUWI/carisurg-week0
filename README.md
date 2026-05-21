@@ -57,6 +57,10 @@ The Day 2 task focused on cleaning the assigned `MAP` column. Since MAP is calcu
 
 `MAP = (SBP + 2 × DBP) / 3`
 
+This submission was completed as part of a group task. Our group worked collaboratively to clean and validate the assigned `MAP` column, with the process documented through the notebook, justification report, and evidence screenshots.
+
+Group members: Shari Oliver, Tianna Bassaragh, Josiah-John Green, Gabrielle Johnson, and Ansarah Mohammed.
+
 The submission includes:
 
 - Completed Colab/Jupyter notebook
