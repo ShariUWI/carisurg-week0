@@ -27,6 +27,8 @@ The main objectives for Week 0 are to:
 - Develop simple rule-based logic to identify at-risk patients
 - Submit a final documented notebook
 
+---
+
 ## Day 1 Submission: Gender Column Cleaning
 
 The Day 1 task focused on cleaning the `Gender` column in the Week 0 emergency triage dataset.
@@ -46,3 +48,66 @@ The completed notebook includes:
 - Saving the cleaned dataset for future Week 0 tasks
 
 Notebook: `S_Oliver_Week0_Day1_Gender_Cleaning.ipynb`
+
+---
+
+## Day 2 Submission: Advanced MAP Cleaning
+
+The Day 2 task focused on cleaning the assigned `MAP` column. Since MAP is calculated from systolic and diastolic blood pressure, we first prepared `SBP` and `DBP`, then recalculated MAP using:
+
+`MAP = (SBP + 2 × DBP) / 3`
+
+The submission includes:
+
+- Completed Colab/Jupyter notebook
+- MAP cleaning justification report
+- Screenshots showing environment setup and final cleaning outputs
+- Evidence of DBP, SBP, and MAP validation checks
+
+### Files
+
+- `S_Oliver_Week0_Tutorial2_Advanced_Cleaning.ipynb`
+- `MAP_Cleaning_Report_Extra_Justifications.pdf`
+
+### Evidence Screenshots
+
+Screenshots are stored in the `screenshots/` folder and show the notebook outputs used to verify the cleaning process.
+
+## Cleaning Considerations
+
+Several considerations were made during the MAP cleaning process:
+
+1. **Clinical dependency of MAP**  
+   MAP is not an independent value. It is calculated from systolic blood pressure (`SBP`) and diastolic blood pressure (`DBP`) using:
+
+   `MAP = (SBP + 2 × DBP) / 3`
+
+   Because of this, we prepared `SBP` and `DBP` before recalculating `MAP`.
+
+2. **Valid clinical ranges**  
+   We used the following ranges to identify invalid values:
+
+   - `SBP`: 50-250 mmHg
+   - `DBP`: 30-150 mmHg
+   - `MAP`: 40-180 mmHg
+
+3. **Invalid values were not deleted immediately**  
+   Values outside the valid range were converted to `NaN` instead of deleting patient rows. This preserved other useful patient information.
+
+4. **Median imputation was used where appropriate**  
+   Median imputation was selected because blood pressure values may contain outliers, and the median is less affected by extreme values than the mean.
+
+## Submission Evidence
+
+The repository includes:
+
+- Completed Day 2 notebook
+- MAP cleaning justification report
+- Screenshots showing the cleaning outputs
+- Evidence of the considerations used to clean SBP, DBP, and MAP
+
+6. **MAP was recalculated from cleaned SBP and DBP**  
+   After preparing `SBP` and `DBP`, we recalculated `MAP` using the clinical formula. This was more appropriate than only filtering or imputing the original MAP column.
+
+7. **Clinically significant values were preserved**  
+   One MAP value was slightly below the expected range. Since it was calculated from valid SBP and DBP values, it was preserved and flagged as a possible critically low MAP rather than treated as a data error.
