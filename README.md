@@ -120,3 +120,54 @@ The repository includes:
 
 7. **Clinically significant values were preserved**  
    One MAP value was slightly below the expected range. Since it was calculated from valid SBP and DBP values, it was preserved and flagged as a possible critically low MAP rather than treated as a data error.
+
+---
+## Day 3 Submission: Basic Data Visualisation with Matplotlib
+
+The Day 3 task focused on creating clinically meaningful plots from the cleaned Mercer General ED triage dataset using `matplotlib`.
+
+The goal of this task was not just to create graphs, but to create visualisations that answer specific clinical or data questions. Each plot includes a clear title, labelled axes, clinical reference lines or zones where appropriate, and saved image output.
+
+### Individual Student Task
+
+For my individual challenge, I created two main plots:
+
+1. **Scatter Plot: Pulse vs MAP**
+   - Clinical question: Do patients with lower MAP tend to have higher pulse rates, which may suggest possible physiological stress or compensation?
+   - This plot compares pulse and mean arterial pressure.
+   - Reference lines were added at `MAP = 65 mmHg` and `Pulse = 100 bpm`.
+   - An annotation was added to identify the possible review zone for patients with low MAP and high pulse.
+
+2. **Histogram: Distribution of SBP Values**
+   - Clinical question: What is the distribution of systolic blood pressure values among patients in the Mercer General ED triage dataset?
+   - This plot shows how SBP values are distributed across the cleaned dataset.
+   - Shaded reference zones were added for SBP values below `90 mmHg` and above `180 mmHg`.
+
+### Files Included
+
+- `S_Oliver_Week0_Tutorial3_Visualisation.ipynb`
+- `Day3_Visualisation_Report.pdf`
+- `plots/map_vs_pulse_scatter.png`
+- `plots/sbp_distribution_histogram.png`
+
+### Cleaning and Clinical Context
+
+The plots were created using the cleaned Week 0 triage dataset. Clinical reference lines and shaded zones were included to make the plots more meaningful for emergency department triage interpretation.
+
+The main clinical considerations were:
+
+- `MAP < 65 mmHg` may suggest reduced perfusion and may require clinical review.
+- `Pulse > 100 bpm` may suggest tachycardia.
+- `SBP < 90 mmHg` may suggest hypotension or shock risk.
+- `SBP > 180 mmHg` may suggest severe hypertension and may require review.
+
+Abnormal values were not automatically treated as errors because emergency department patients may present with genuinely abnormal vital signs.
+
+### Submission Evidence
+
+The repository includes:
+
+- Completed Day 3 visualisation notebook
+- Day 3 visualisation report
+- Saved plot images generated from the notebook
+- Evidence that the required histogram and scatter plot were produced
