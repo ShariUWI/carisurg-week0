@@ -146,7 +146,7 @@ For my individual challenge, I created two main plots:
 ### Files Included
 
 - `S_Oliver_Week0_Tutorial3_Visualisation.ipynb`
-- `Day3_Visualisation_Report.pdf`
+- `Matplotlib_Visualisation_Report.pdf`
 - `plots/map_vs_pulse_scatter.png`
 - `plots/sbp_distribution_histogram.png`
 
