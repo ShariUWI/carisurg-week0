@@ -171,3 +171,44 @@ The repository includes:
 - Day 3 visualisation report
 - Saved plot images generated from the notebook
 - Evidence that the required histogram and scatter plot were produced
+
+---
+
+## Final Week 0 Submission: Combined Tasks 2–4
+
+This final submission combines Tasks 2–4 into one documented Jupyter notebook. The purpose of the final notebook is to show how the Week 0 tasks connect together: visualising cleaned triage data, explaining the clinical meaning of vital signs, and designing basic rule-based logic for identifying at-risk patients.
+
+### Included Tasks
+
+**Task 2: Data Visualisation**
+- Created clinically meaningful plots using `matplotlib`
+- Included a histogram and scatter plot
+- Used labelled axes, titles, clinical reference lines, shaded zones, and saved plot outputs
+- Focused on vital signs such as SBP, MAP, and pulse
+
+**Task 3: Clinical Context Write-Up**
+- Selected a vital sign from the dataset
+- Explained what the vital sign measures
+- Identified normal and abnormal ranges
+- Connected the vital sign to emergency department triage decision-making
+
+**Task 4: Digital Triage Pseudocode**
+- Designed pseudocode for a digital ED triage support model
+- Used patient vital signs to assign risk levels
+- Included clinical flags for abnormal values
+- Added critical override rules for high-risk findings
+- Included human-in-the-loop review so the model supports, rather than replaces, clinical judgement
+
+### Final Submission Files
+
+- `S_Oliver_Week0_Final_Tasks2-4.ipynb`
+- `Week_0_Digital_ED_Triage_Model_Pseudocode.pdf`
+- `Matplotlib_Visualisation_Report.pdf`
+- `plots/map_vs_pulse_scatter.png`
+- `plots/sbp_distribution_histogram.png`
+
+### Overall Purpose
+
+This final notebook demonstrates how cleaned clinical data can be used to support emergency department triage. The visualisations help identify patterns in vital signs, the clinical write-up explains why vital signs matter, and the pseudocode shows how a digital system could flag patients who may be at risk.
+
+The model is intended as a clinical decision-support tool. It does not replace nurses or clinicians, but helps organize patient information, identify abnormal vital signs, and highlight patients who may need urgent review.
