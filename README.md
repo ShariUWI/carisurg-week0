@@ -148,7 +148,7 @@ For my individual challenge, I created two main plots:
 ### Files Included
 
 - `S_Oliver_Week0_Tutorial3_Visualisation.ipynb`
-- `Matplotlib_Visualisation_Report.pdf`
+- `Matplotlib_Visualization_Report.pdf`
 - `plots/pulse_vs_map.png`
 - `plots/sbp_distribution_histogram.png`
 
@@ -176,9 +176,9 @@ The repository includes:
 
 ---
 
-## Final Week 0 Submission: Combined Tasks 2–4
+## Final Week 0 Submission: Combined Tasks 2–5
 
-This final submission combines Tasks 2–4 into one documented Jupyter notebook. The purpose of the final notebook is to show how the Week 0 tasks connect together: visualising cleaned triage data, explaining the clinical meaning of vital signs, and designing basic rule-based logic for identifying at-risk patients.
+This final submission combines Tasks 2–5 into one documented Jupyter notebook. The purpose of the final notebook is to show how the Week 0 tasks connect together: visualising cleaned triage data, explaining the clinical meaning of vital signs, and designing basic rule-based logic for identifying at-risk patients.
 
 ### Included Tasks
 
@@ -204,9 +204,9 @@ This final submission combines Tasks 2–4 into one documented Jupyter notebook.
 ### Final Submission Files
 
 - `S_Oliver_Week0_Final_Tasks2-4.ipynb`
-- `Week_0_Digital_ED_Triage_Model_Pseudocode.pdf`
-- `Matplotlib_Visualisation_Report.pdf`
-- `plots/map_vs_pulse_scatter.png`
+- `Week 0 Digital ED Triage Model Pseudocode.pdf`
+- `Matplotlib_Visualization_Report.pdf`
+- `plots/pulse_vs_map.png`
 - `plots/sbp_distribution_histogram.png`
 
 ### Overall Purpose
