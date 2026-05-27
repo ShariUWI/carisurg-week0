@@ -34,20 +34,21 @@ The main objectives for Week 0 are to:
 The Day 1 task focused on cleaning the `Gender` column in the Week 0 emergency triage dataset.
 
 The completed notebook includes:
-
 - Loading the dataset into pandas
 - Inspecting the original `Gender` column
 - Identifying inconsistent values such as `0`, `1`, `Male`, `MALE`, `Female`, and `FEMALE`
-- Encoding gender values using:
-  - `1 = Male`
-  - `0 = Female`
-  - `2 = Non-binary/Other`
-  - `-1 = Unknown/Unspecified`
-- Handling missing, unclear, and unexpected entries
+- Standardizing the gender values into human-readable labels:
+  - `Male`
+  - `Female`
+- Checking for missing or unmapped values
 - Verifying the cleaned column using value counts
 - Saving the cleaned dataset for future Week 0 tasks
 
-Notebook: `S_Oliver_Week0_Day1_Gender_Cleaning.ipynb`
+Based on feedback, the updated version uses readable labels instead of numeric codes to improve clarity and interpretation.
+
+### Files
+- `S_Oliver_Week0_Day1_Gender_Cleaning_Updated.ipynb`
+- `Gender_Cleaning_Report_Updated.pdf`
 
 ---
 
@@ -69,9 +70,10 @@ The submission includes:
 - Evidence of DBP, SBP, and MAP validation checks
 
 ### Files
-
 - `S_Oliver_Week0_Tutorial2_Advanced_Cleaning.ipynb`
-- `MAP_Cleaning_Report_Extra_Justifications.pdf`
+- `MAP_Cleaning_Report (Extra Justifications).pdf`
+- `Assignment_2_Cleaned_MAP_Column.csv`
+- `screenshots/`
 
 ### Evidence Screenshots
 
@@ -147,7 +149,7 @@ For my individual challenge, I created two main plots:
 
 - `S_Oliver_Week0_Tutorial3_Visualisation.ipynb`
 - `Matplotlib_Visualisation_Report.pdf`
-- `plots/map_vs_pulse_scatter.png`
+- `plots/pulse_vs_map.png`
 - `plots/sbp_distribution_histogram.png`
 
 ### Cleaning and Clinical Context
